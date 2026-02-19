@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cognitive Reflex Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="startScreen">
+  <h1>Cognitive Reflex Analyzer</h1>
+  <input id="playerName" placeholder="Enter Player Name"/>
+  <button id="startBtn">Start Game</button>
+</div>
+
+<canvas id="gameCanvas" width="800" height="500"></canvas>
+
+<div id="summaryScreen" style="display:none;">
+  <h2>Session Summary</h2>
+  <p id="avgReaction"></p>
+  <p id="accuracy"></p>
+  <p id="skillClass"></p>
+</div>
+
+<script type="module" src="./js/main.js"></script>
+
+</body>
+</html>

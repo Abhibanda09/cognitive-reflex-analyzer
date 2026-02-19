@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analytics Dashboard</title>
+</head>
+
+<body>
+
+<h1>Cognitive Performance Dashboard</h1>
+
+<h2 id="reaction"></h2>
+<h2 id="accuracy"></h2>
+
+<script>
+
+async function loadData() {
+
+  const res = await fetch("http://localhost:5000/api/analytics");
+  const data = await res.json();
+
+  document.getElementById("reaction")
+    .innerText = "Average Reaction: " + data.avgReaction + " ms";
+
+  document.getElementById("accuracy")
+    .innerText = "Accuracy: " + data.accuracy + "%";
+}
+
+loadData();
+
+</script>
+
+</body>
+</html>
