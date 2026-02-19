@@ -4,8 +4,8 @@ const snowflake = require("snowflake-sdk");
 
 const connection = snowflake.createConnection({
   account: "VBFVLLQ-PN67140",  // Azure Account ID
-  username: "ABHI",
-  password: "Abhibanda@2006",
+  username: process.env.SNOW_USER,
+  password: process.env.SNOW_PASS,
   warehouse: "COMPUTE_WH",
   database: "BUILDATHON_DB",
   schema: "GAME_SCHEMA"
