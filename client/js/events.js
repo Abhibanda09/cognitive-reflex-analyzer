@@ -17,7 +17,7 @@ export async function sendEventsToServer() {
 
   try {
 
-    await fetch("http://localhost:5000/api/events", {
+    await fetch("https://cognitive-reflex-analyzer.onrender.com/api/events", {
 
       method: "POST",
       headers: {
